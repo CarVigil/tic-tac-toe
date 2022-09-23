@@ -53,12 +53,24 @@ export default function Game() {
     const desc = move ? "Go to #" + move : "Start the game";
     return (
       <li key={move}>
-        <button onClick={() => jumpTo(move)}>{desc}</button>
+        <button className="button" onClick={() => jumpTo(move)}>{desc}</button>
       </li>
     );
   });
   return (
     <div className={winner?"game disabled":"game"}>
+      <div class="bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
       <div className="game-board">
         <Board
           onClick={(i) => handleClick(i)}
@@ -66,7 +78,9 @@ export default function Game() {
         ></Board>
       </div>
       <div className="game-info">
-        <div>{status}</div>
+        <div>
+          <h2>{status}</h2>
+        </div>
         <ul className="list">{moves}</ul>
       </div>
     </div>
