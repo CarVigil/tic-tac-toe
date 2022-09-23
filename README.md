@@ -12,7 +12,7 @@
 Try it on https://carvigil.github.io/tic-tac-toe
 
 ## AUTHOR
-:woman_technologist: Carla Daiana Vigil
+:woman_technologist: Carla Daiana Vigil  
 :octocat: https://github.com/CarVigil/
 
 ---
